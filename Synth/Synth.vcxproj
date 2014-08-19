@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AEE53AB6-86B3-4C42-BCE9-E2FC7E21608D}</ProjectGuid>
+    <RootNamespace>Synth</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>DEBUG;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ChannelMessage.cpp" />
+    <ClCompile Include="ChannelMessageBuilder.cpp" />
+    <ClCompile Include="Hashtable.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MetaMessage.cpp" />
+    <ClCompile Include="MidiEvent.cpp" />
+    <ClCompile Include="MidiFileProperties.cpp" />
+    <ClCompile Include="NullMessage.cpp" />
+    <ClCompile Include="Sequence.cpp" />
+    <ClCompile Include="ShortMessage.cpp" />
+    <ClCompile Include="SysCommonMessage.cpp" />
+    <ClCompile Include="SysCommonMessageBuilder.cpp" />
+    <ClCompile Include="SysExMessage.cpp" />
+    <ClCompile Include="SysRealtimeMessage.cpp" />
+    <ClCompile Include="Track.cpp" />
+    <ClCompile Include="TrackReader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BackgroundWorker.h" />
+    <ClInclude Include="Buffer.h" />
+    <ClInclude Include="ChannelMessage.h" />
+    <ClInclude Include="ChannelMessageBuilder.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="Exception.h" />
+    <ClInclude Include="Hashtable.h" />
+    <ClInclude Include="IMessageBuilder.h" />
+    <ClInclude Include="IMidiMessage.h" />
+    <ClInclude Include="List.h" />
+    <ClInclude Include="MetaMessage.h" />
+    <ClInclude Include="MidiEvent.h" />
+    <ClInclude Include="MidiFileProperties.h" />
+    <ClInclude Include="NullMessage.h" />
+    <ClInclude Include="PpqnClock.h" />
+    <ClInclude Include="Property.h" />
+    <ClInclude Include="Sequence.h" />
+    <ClInclude Include="ShortMessage.h" />
+    <ClInclude Include="Stream.h" />
+    <ClInclude Include="SysCommonMessage.h" />
+    <ClInclude Include="SysCommonMessageBuilder.h" />
+    <ClInclude Include="SysExMessage.h" />
+    <ClInclude Include="SysRealtimeMessage.h" />
+    <ClInclude Include="Types.h" />
+    <ClInclude Include="Track.h" />
+    <ClInclude Include="TrackReader.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

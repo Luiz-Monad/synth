@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Messages">
+      <UniqueIdentifier>{d0ade2be-a7e7-4611-9403-812cf90367b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Messages">
+      <UniqueIdentifier>{c2abc61e-7f5b-4494-8bde-1bfd6ae42e6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Sequencing">
+      <UniqueIdentifier>{f9cf7ab9-fdba-4015-aa21-91dcf99ce1c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sequencing">
+      <UniqueIdentifier>{b2a22df8-43cf-4490-b8d3-6c7d8b9e78c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Messages\MessageBuilders">
+      <UniqueIdentifier>{a43631c1-6924-4b20-b7cf-722b40cf75bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Sequencing\TrackClasses">
+      <UniqueIdentifier>{2c166030-7977-4001-9da2-61473cfe7c85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sequencing\TrackClasses">
+      <UniqueIdentifier>{bc7f1a20-f6d4-4320-9c7e-30d9ed2bd7ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Messages\MessageBuilders">
+      <UniqueIdentifier>{4eddd5ca-bce4-44d1-8bce-bfdacf25ac30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Clocks">
+      <UniqueIdentifier>{91dfe66d-c42f-4d0e-b533-ea7ecd6d85f3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Hashtable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SysRealtimeMessage.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="ChannelMessage.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="SysCommonMessage.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="SysCommonMessageBuilder.cpp">
+      <Filter>Source Files\Messages\MessageBuilders</Filter>
+    </ClCompile>
+    <ClCompile Include="ShortMessage.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="NullMessage.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="ChannelMessageBuilder.cpp">
+      <Filter>Source Files\Messages\MessageBuilders</Filter>
+    </ClCompile>
+    <ClCompile Include="MetaMessage.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="SysExMessage.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="MidiEvent.cpp">
+      <Filter>Source Files\Sequencing</Filter>
+    </ClCompile>
+    <ClCompile Include="Track.cpp">
+      <Filter>Source Files\Sequencing\TrackClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="TrackReader.cpp">
+      <Filter>Source Files\Sequencing\TrackClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="MidiFileProperties.cpp">
+      <Filter>Source Files\Sequencing</Filter>
+    </ClCompile>
+    <ClCompile Include="Sequence.cpp">
+      <Filter>Source Files\Sequencing</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Hashtable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Property.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChannelMessage.h">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="IMidiMessage.h">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="MetaMessage.h">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="ShortMessage.h">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="SysCommonMessage.h">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="SysCommonMessageBuilder.h">
+      <Filter>Header Files\Messages\MessageBuilders</Filter>
+    </ClInclude>
+    <ClInclude Include="ChannelMessageBuilder.h">
+      <Filter>Header Files\Messages\MessageBuilders</Filter>
+    </ClInclude>
+    <ClInclude Include="SysRealtimeMessage.h">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="SysExMessage.h">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="NullMessage.h">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="IMessageBuilder.h">
+      <Filter>Header Files\Messages\MessageBuilders</Filter>
+    </ClInclude>
+    <ClInclude Include="Track.h">
+      <Filter>Header Files\Sequencing\TrackClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackReader.h">
+      <Filter>Header Files\Sequencing\TrackClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="MidiEvent.h">
+      <Filter>Header Files\Sequencing</Filter>
+    </ClInclude>
+    <ClInclude Include="MidiFileProperties.h">
+      <Filter>Header Files\Sequencing</Filter>
+    </ClInclude>
+    <ClInclude Include="PpqnClock.h">
+      <Filter>Header Files\Clocks</Filter>
+    </ClInclude>
+    <ClInclude Include="Sequence.h">
+      <Filter>Header Files\Sequencing</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BackgroundWorker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="List.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
